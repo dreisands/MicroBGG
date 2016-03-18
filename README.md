@@ -1,6 +1,6 @@
 # MicroBGG
 
-MicroBGG is an application for the iPhone that creates a more user-friendly interface for mobile users of the Board Game Geek website.
+MicroBGG is an application for the iPhone that creates a more user-friendly interface for mobile users of the Board Game Geek website. This originated as the final project for my iOS Development class at the University of Chicago.
 
 ## Current Features
 
