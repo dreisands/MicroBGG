@@ -1,21 +1,23 @@
 //
-//  WishListTableViewCell.swift
+//  HotnessTableViewCell.swift
 //  MicroBGG
 //
-//  Created by Trey Sands on 3/13/16.
+//  Created by Trey Sands on 6/3/16.
 //  Copyright © 2016 Trey Sands. All rights reserved.
 //
 
 import UIKit
 
-class WishListTableViewCell: UITableViewCell {
+class HotnessTableViewCell: UITableViewCell {
+    
+    
     
     // MARK: Properties
     
-    @IBOutlet weak var gameImage: UIImageView!
-    @IBOutlet weak var gameTitle: UILabel!
-    @IBOutlet weak var gameDatePublished: UILabel!
-    
+    @IBOutlet weak var rank: UILabel!
+    @IBOutlet weak var boardGameName: UILabel!
+    @IBOutlet weak var yearPublished: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         self.layer.cornerRadius=10

@@ -7,28 +7,36 @@
 //
 
 import UIKit
+import CoreData
 
 class WishListTableViewController: UITableViewController {
     
     // MARK: Properties
     
     // The wishlist that will populate the cells
-    var wishList: [Game]?
+    var wishList: [BoardGame]?
+    
+    let delegate = UIApplication.sharedApplication().delegate as? AppDelegate
     
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        print("loading data from \(Game.ArchiveURL.path!)")
-        wishList = NSKeyedUnarchiver.unarchiveObjectWithFile(Game.ArchiveURL.path!) as? [Game]
+        let predicate = NSPredicate(format: "onWishList == true")
+        let fetch = NSFetchRequest(entityName: "BoardGame")
+        fetch.predicate = predicate
+        do {
+            let fetchResults = try delegate?.managedObjectContext.executeFetchRequest(fetch) as? [BoardGame]
+            wishList = fetchResults
+        } catch {
+            return
+        }
         self.tableView.reloadData()
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("loading data from \(Game.ArchiveURL.path!)")
         self.tableView.rowHeight = 100
-        wishList = NSKeyedUnarchiver.unarchiveObjectWithFile(Game.ArchiveURL.path!) as? [Game]
         self.tableView.reloadData()
 
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
@@ -58,16 +66,16 @@ class WishListTableViewController: UITableViewController {
         if wishList?.count < 1 {
             return cell
         }
-        let game = wishList![indexPath.row].gameInfo
-        cell.gameTitle.text = game["name"] as? String
+        let game = wishList![indexPath.row]
+        cell.gameTitle.text = game.title
+        self.tableView.backgroundColor = .blueColor()
         
-        if game["image"] != nil {
-            let image = game["image"] as! UIImage
+        if game.coverImage != nil {
+            let image = UIImage(data: game.coverImage!)
             cell.gameImage.image = image
         }
         
-        cell.gameDatePublished.text = game["yearpublished"] as? String
-
+        cell.gameDatePublished.text = game.yearPublished
 
         return cell
     }
@@ -77,18 +85,14 @@ class WishListTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
             // Delete the row from the data source
-            wishList = NSKeyedUnarchiver.unarchiveObjectWithFile(Game.ArchiveURL.path!) as? [Game]
-            print("Unarchiving from \(Game.ArchiveURL.path!)")
-            let i = indexPath.row
-            wishList?.removeAtIndex(i)
-            let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(wishList!, toFile: Game.ArchiveURL.path!)
-            if !isSuccessfulSave {
-                print("Failed to save games...")
-                
-            }
-            print("Archiving from \(Game.ArchiveURL.path!)")
+            // Delete it from the managedObjectContext
+            let gameToDelete = wishList![indexPath.row]
+            delegate?.managedObjectContext.deleteObject(gameToDelete)
+            wishList?.removeAtIndex(indexPath.row)
+            delegate?.saveContext()
             
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            // Tell the table view to animate out that row
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
@@ -112,8 +116,7 @@ class WishListTableViewController: UITableViewController {
                     return
                 }
                 let selectedGame = wishList![indexPath.row]
-                print("selected game: \(selectedGame)")
-                gameDetailVC.gameObj = selectedGame
+                gameDetailVC.gameCoreData = selectedGame
                 gameDetailVC.fromWishList = true
             }
         }

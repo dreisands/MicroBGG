@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D0DD6DD1C9661A20082B403 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DD6DC1C9661A20082B403 /* Game.swift */; };
 		5D0DD6DF1C9668610082B403 /* WishListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DD6DE1C9668610082B403 /* WishListTableViewController.swift */; };
 		5D0DD6E11C96698F0082B403 /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DD6E01C96698F0082B403 /* WishListTableViewCell.swift */; };
 		5D0DD6E31C9759F30082B403 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D0DD6E21C9759F30082B403 /* Settings.bundle */; };
-		5D0DD6E71C9781D10082B403 /* CollectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DD6E61C9781D10082B403 /* CollectionTableViewController.swift */; };
-		5D0DD6E91C97820D0082B403 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0DD6E81C97820D0082B403 /* CollectionTableViewCell.swift */; };
 		5D1729011C8E1A52008A14E6 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1729001C8E1A52008A14E6 /* SearchTableViewController.swift */; };
 		5D1729031C8E48D0008A14E6 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1729021C8E48D0008A14E6 /* SearchTableViewCell.swift */; };
 		5D1729051C8F9061008A14E6 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1729041C8F9061008A14E6 /* GameDetailViewController.swift */; };
 		5D1729071C8F92EF008A14E6 /* DataDownloadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1729061C8F92EF008A14E6 /* DataDownloadRequest.swift */; };
 		5D1729091C8F93CB008A14E6 /* SharedNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1729081C8F93CB008A14E6 /* SharedNetworking.swift */; };
 		5D32F7581C877CB70079DE6C /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D32F7571C877CB70079DE6C /* SWXMLHash.swift */; };
+		5DA06E821CD6ABF800697EE1 /* MicroBGG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5DA06E801CD6ABF800697EE1 /* MicroBGG.xcdatamodeld */; };
+		5DA06EB41CD6AD5F00697EE1 /* BoardGame+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA06EB21CD6AD5F00697EE1 /* BoardGame+CoreDataProperties.swift */; };
+		5DA06EB51CD6AD5F00697EE1 /* BoardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA06EB31CD6AD5F00697EE1 /* BoardGame.swift */; };
 		5DC80E1E1C85106A001E0B84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC80E1D1C85106A001E0B84 /* AppDelegate.swift */; };
 		5DC80E251C85106A001E0B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC80E231C85106A001E0B84 /* Main.storyboard */; };
 		5DC80E271C85106A001E0B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DC80E261C85106A001E0B84 /* Assets.xcassets */; };
 		5DC80E2A1C85106A001E0B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DC80E281C85106A001E0B84 /* LaunchScreen.storyboard */; };
 		5DC80E351C85106A001E0B84 /* MicroBGGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC80E341C85106A001E0B84 /* MicroBGGTests.swift */; };
+		5DEEAD351D02144300A44609 /* HotnessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEAD341D02144300A44609 /* HotnessTableViewController.swift */; };
+		5DEEAD371D02149000A44609 /* HotnessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEAD361D02149000A44609 /* HotnessTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,18 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5D0DD6DC1C9661A20082B403 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5D0DD6DE1C9668610082B403 /* WishListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListTableViewController.swift; sourceTree = "<group>"; };
 		5D0DD6E01C96698F0082B403 /* WishListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishListTableViewCell.swift; sourceTree = "<group>"; };
 		5D0DD6E21C9759F30082B403 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		5D0DD6E61C9781D10082B403 /* CollectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewController.swift; sourceTree = "<group>"; };
-		5D0DD6E81C97820D0082B403 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionTableViewCell.swift; path = ../CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		5D1729001C8E1A52008A14E6 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		5D1729021C8E48D0008A14E6 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		5D1729041C8F9061008A14E6 /* GameDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 		5D1729061C8F92EF008A14E6 /* DataDownloadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDownloadRequest.swift; sourceTree = "<group>"; };
 		5D1729081C8F93CB008A14E6 /* SharedNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedNetworking.swift; sourceTree = "<group>"; };
 		5D32F7571C877CB70079DE6C /* SWXMLHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SWXMLHash.swift; sourceTree = "<group>"; };
+		5DA06E811CD6ABF800697EE1 /* MicroBGG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicroBGG.xcdatamodel; sourceTree = "<group>"; };
+		5DA06EB21CD6AD5F00697EE1 /* BoardGame+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BoardGame+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5DA06EB31CD6AD5F00697EE1 /* BoardGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardGame.swift; sourceTree = "<group>"; };
 		5DC80E1A1C85106A001E0B84 /* MicroBGG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroBGG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC80E1D1C85106A001E0B84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DC80E241C85106A001E0B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,8 @@
 		5DC80E301C85106A001E0B84 /* MicroBGGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MicroBGGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DC80E341C85106A001E0B84 /* MicroBGGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroBGGTests.swift; sourceTree = "<group>"; };
 		5DC80E361C85106A001E0B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEEAD341D02144300A44609 /* HotnessTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotnessTableViewController.swift; sourceTree = "<group>"; };
+		5DEEAD361D02149000A44609 /* HotnessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotnessTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,18 +104,20 @@
 			isa = PBXGroup;
 			children = (
 				5D0DD6E21C9759F30082B403 /* Settings.bundle */,
+				5DA06EB21CD6AD5F00697EE1 /* BoardGame+CoreDataProperties.swift */,
+				5DA06EB31CD6AD5F00697EE1 /* BoardGame.swift */,
 				5DC80E1D1C85106A001E0B84 /* AppDelegate.swift */,
 				5D32F7571C877CB70079DE6C /* SWXMLHash.swift */,
 				5DC80E231C85106A001E0B84 /* Main.storyboard */,
 				5D1729001C8E1A52008A14E6 /* SearchTableViewController.swift */,
 				5D1729021C8E48D0008A14E6 /* SearchTableViewCell.swift */,
+				5DEEAD341D02144300A44609 /* HotnessTableViewController.swift */,
+				5DEEAD361D02149000A44609 /* HotnessTableViewCell.swift */,
 				5D0DD6DE1C9668610082B403 /* WishListTableViewController.swift */,
 				5D0DD6E01C96698F0082B403 /* WishListTableViewCell.swift */,
-				5D0DD6E61C9781D10082B403 /* CollectionTableViewController.swift */,
-				5D0DD6E81C97820D0082B403 /* CollectionTableViewCell.swift */,
 				5D1729041C8F9061008A14E6 /* GameDetailViewController.swift */,
-				5D0DD6DC1C9661A20082B403 /* Game.swift */,
 				5D1729081C8F93CB008A14E6 /* SharedNetworking.swift */,
+				5DA06E801CD6ABF800697EE1 /* MicroBGG.xcdatamodeld */,
 				5D1729061C8F92EF008A14E6 /* DataDownloadRequest.swift */,
 				5DC80E261C85106A001E0B84 /* Assets.xcassets */,
 				5DC80E281C85106A001E0B84 /* LaunchScreen.storyboard */,
@@ -234,16 +240,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D0DD6DF1C9668610082B403 /* WishListTableViewController.swift in Sources */,
-				5D0DD6E71C9781D10082B403 /* CollectionTableViewController.swift in Sources */,
 				5D1729091C8F93CB008A14E6 /* SharedNetworking.swift in Sources */,
 				5D0DD6E11C96698F0082B403 /* WishListTableViewCell.swift in Sources */,
-				5D0DD6DD1C9661A20082B403 /* Game.swift in Sources */,
 				5D1729071C8F92EF008A14E6 /* DataDownloadRequest.swift in Sources */,
 				5D1729051C8F9061008A14E6 /* GameDetailViewController.swift in Sources */,
 				5D1729011C8E1A52008A14E6 /* SearchTableViewController.swift in Sources */,
 				5D32F7581C877CB70079DE6C /* SWXMLHash.swift in Sources */,
 				5DC80E1E1C85106A001E0B84 /* AppDelegate.swift in Sources */,
-				5D0DD6E91C97820D0082B403 /* CollectionTableViewCell.swift in Sources */,
+				5DA06EB41CD6AD5F00697EE1 /* BoardGame+CoreDataProperties.swift in Sources */,
+				5DEEAD351D02144300A44609 /* HotnessTableViewController.swift in Sources */,
+				5DA06EB51CD6AD5F00697EE1 /* BoardGame.swift in Sources */,
+				5DEEAD371D02149000A44609 /* HotnessTableViewCell.swift in Sources */,
+				5DA06E821CD6ABF800697EE1 /* MicroBGG.xcdatamodeld in Sources */,
 				5D1729031C8E48D0008A14E6 /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +456,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5DA06E801CD6ABF800697EE1 /* MicroBGG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5DA06E811CD6ABF800697EE1 /* MicroBGG.xcdatamodel */,
+			);
+			currentVersion = 5DA06E811CD6ABF800697EE1 /* MicroBGG.xcdatamodel */;
+			path = MicroBGG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5DC80E121C85106A001E0B84 /* Project object */;
 }
